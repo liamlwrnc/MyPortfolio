@@ -78,6 +78,9 @@ display: inline;
 	justify-content: space-around;
 }
 
+.nav-button:active {
+    transform: scale(0.99);
+	
 .portfolio-section div {
 	box-shadow: 3px 3px 2.5px #000000;
 	border-radius: 5px;
