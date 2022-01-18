@@ -115,22 +115,6 @@
 	padding: 4px;
 }
 
-.contact-form {
-	display: relative;
-	max-width: 400px;
-	width: 100%;
-	margin: 0;
-}
-
-.contact-form button {
-	background-color: #fc7b03;
-	color: #000000;
-	border-radius: 4px;
-	font-size: 25px;
-	padding: 4px;
-	margin-top: 5px;	
-}
-
 footer {
 	font-family: "Andale Mono";
 	font-weight: bold;
@@ -141,7 +125,7 @@ footer {
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 80px;
+	scroll-padding-top: 70px;
 }
 
 h2 {
@@ -158,6 +142,6 @@ body {
 	margin: 0;
 }
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 700px) {}
 
 
