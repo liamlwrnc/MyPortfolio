@@ -6,7 +6,7 @@
     width: 100%;
     padding: 5px 0;	
 	position: fixed;
-	z-index: 9999;
+	z-index: 2;
 }
 
 .navbar a {
@@ -78,10 +78,21 @@ display: inline;
 	justify-content: space-around;
 }
 
+.portfolio-section div {
+	box-shadow: 3px 3px 2.5px #000000;
+	border-radius: 5px;
+	border-style: ridge;
+	width: 50%;
+	height: 20vh;
+	padding: 20px;
+	font-size: 1.5rem;
+}
+
 .contact-section {
 	background-color: #000000;
 	height: 100vh;
 	font-family: Arial;
+	font-size: 2rem;
 	padding-left: 200px;
 	padding-top: 100px;
 	color: #fc7b03;
@@ -92,12 +103,24 @@ display: inline;
 	padding: 4px;
 }
 
+footer {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1rem;
+	background-color: #fc7b03;
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	scroll-behavior: smooth;
-	box-sizing: border-box;
 }
 
 h2 {
 	font-size: 2rem;
+}
+
+* {
+	box-sizing: border-box;	
 }
 
