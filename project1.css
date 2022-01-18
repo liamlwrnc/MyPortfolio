@@ -7,6 +7,7 @@
     padding: 5px 0;	
 	position: fixed;
 	z-index: 2;
+	align: center;
 }
 
 .navbar a {
@@ -20,8 +21,8 @@
 	font-weight: bold;
     cursor: pointer;
     text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+	align: center;
+   
 }
 
 .navbar a:hover,
@@ -31,20 +32,29 @@
 
 .intro-section {
 	font-family: Arial;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding-left: 200px;
-	padding-top: 100px;
 	text-align: center;
 	color: #ffffff;
 	background-color: #fc7b03;
 	background-image: linear-gradient(to bottom right, #fc7b03, #000000);
-	height: 100vh;
-	
+	height: 100vh;	
 }
-	
+
+.intro1 {
+	font-size: 6rem;
+}
+
+.intro2 {
+	font-size: 4rem;
+}
+
 .intro-section img {
 	position: absolute;
-	left: 0;
-	bottom: 0;
+	left: 100px;
+	bottom: -28px;
 }
 
 .about-section {
@@ -52,8 +62,8 @@
 	height: 100vh;
 	font-family: Arial;
 	padding-left: 200px;
-	padding-top: 100px;
 	color: #fc7b03;
+
 }
 
 .about-section p {
@@ -61,8 +71,10 @@
 	max-width: 700px;
 }
 
-.about-section div {
-display: inline;
+.about-section img {
+	position: relative;
+	left: 1000px;
+	bottom: 300px;
 }
 
 .portfolio-section {
@@ -71,7 +83,6 @@ display: inline;
 	font-family: Arial;
 	font-weight: bold;
 	padding-left: 200px;
-	padding-top: 100px;
 	color: #000000;
 	display: flex;
 	flex-direction: column;
@@ -80,6 +91,7 @@ display: inline;
 
 .nav-button:active {
     transform: scale(0.99);
+}
 	
 .portfolio-section div {
 	box-shadow: 3px 3px 2.5px #000000;
@@ -97,7 +109,6 @@ display: inline;
 	font-family: Arial;
 	font-size: 2rem;
 	padding-left: 200px;
-	padding-top: 100px;
 	color: #fc7b03;
 }	
 
@@ -106,24 +117,53 @@ display: inline;
 	padding: 4px;
 }
 
-.footer {
+.contact-form {
+	display: relative;
+	max-width: 400px;
+	width: 100%;
+	margin: 0;
+}
+
+.contact-form button {
+	background-color: #fc7b03;
+	color: #000000;
+	border-radius: 4px;
+	font-size: 25px;
+	padding: 4px;	
+}
+
+footer {
 	font-family: Arial;
 	font-weight: bold;
 	font-size: 1rem;
 	background-color: #fc7b03;
-	margin: 0;
-	padding: 0;
+	padding-left: 20px;
 }
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 5rem;
 }
 
 * {
 	box-sizing: border-box;	
 }
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		flex-direction: column;
+	}
+}
+
+
 
