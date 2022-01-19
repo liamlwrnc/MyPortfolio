@@ -160,7 +160,11 @@ body {
 
 @media screen and (max-width: 800px) {
 	.contact-section, .intro-section, .portfolio-section, .about-section {
-		padding-left: 20px;
+		
+		padding: 20px;
+		height: auto;
+		flex-direction: column;
+		gap: 20px;
 	}
 	.project-containers {
 		flex-direction: column;
