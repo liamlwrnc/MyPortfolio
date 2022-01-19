@@ -90,15 +90,27 @@
 	flex-direction: column;
 	justify-content: space-around;
 }
+
+.portfolio-heading {
+	font-size: 5rem;
+	margin-bottom: -5px;
+}
 	
-.portfolio-section div {
+.project-containers {
 	box-shadow: 3px 3px 2.5px #000000;
 	border-radius: 5px;
 	border-style: ridge;
 	width: 50%;
-	height: 20vh;
+	height: 25vh;
 	padding: 20px;
 	font-size: 1.5rem;
+	display: flex;
+	justify content: space-around;
+	gap: 20px;
+}
+
+.project-descriptors {
+	display: flex;
 }
 
 .contact-section {
@@ -113,6 +125,7 @@
 .contact-section a img {
 	background: #fc7b03;
 	padding: 4px;
+	border-radius: 6px;
 }
 
 footer {
@@ -142,6 +155,11 @@ body {
 	margin: 0;
 }
 
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 700px) {
+	body {
+		height: auto;
+		flex-direction: column;
+	}
+}
 
 
