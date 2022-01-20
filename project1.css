@@ -201,12 +201,6 @@ body {
 			height: 100px;
 			left: 20px;
 	}
-	.intro-text, .intro1 {
-		text-size: 4rem;
-	}
-	.intro2 {
-		text-size: 2rem;
-	}
 	.about-text {
 		width: 100%;
 	}
