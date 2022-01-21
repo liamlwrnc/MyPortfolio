@@ -1,46 +1,216 @@
-.navbar {
-	background-color: #7a7676;
+nav {
+	background-color: #fc7b03;
 	display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;	
+	position: fixed;
+	z-index: 2;
+	text-align: center;
 	justify-content: center;
 }
 
-.nav-button {
-    display: inline-block;
+nav a {
     border: none;
-    padding: 1rem 2rem;
-    margin: 0;
+    padding: 1rem 1rem;
+	width: 20%;
     text-decoration: none;
-    background: #7a7676;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.nav-button:hover,
-.nav-button:focus {
     background: #fc7b03;
+    color: #000000;
+    font-family: "Andale Mono";
+	font-weight: bold;
+    cursor: pointer;
 }
 
-.nav-button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+nav a:hover,
+nav a:focus {
+    background: #db6a00;
 }
 
-.nav-button:active {
-    transform: scale(0.99);
-}
-
-.intro-page {
-	font-family: Arial;
-	padding-left: 40px;
-	color: white;
+.intro-section {
+	font-family: "Andale Mono";
+	justify-content: center;
+	align-items: center;
+	padding-left: 200px;
+	color: #ffffff;
 	background-color: #fc7b03;
 	background-image: linear-gradient(to bottom right, #fc7b03, #000000);
-	}
+	position: relative;
+	min-height: 100vh;	
 }
+
+.intro-section div {
+	text-align: center;
+	padding-top: 100px;
+}
+
+.intro-section img {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	height: 20vw;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+header h2 {
+	font-size: 4rem;
+}
+
+.about-section {
+	background-color: #000000;
+	min-height: 100vh;
+	font-family: Andale Mono;
+	padding-left: 200px;
+	display: flex;
+	color: #fc7b03;
+}
+
+.about-section h2 {
+	font-size: 5rem;
+}
+
+.about-section div {
+	font-size: 1.5rem;
+	width: 60%;
+}
+
+.about-image {
+	padding-top: 150px;
+	padding-left: 40px;
+}
+
+.about-section a {
+	color: inherit;
+}
+
+.portfolio-section {
+	background-color: #fc7b03;
+	font-family: "Andale Mono";
+	font-weight: bold;
+	padding-left: 200px;
+	color: #000000;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	min-height: 100vh;
+}
+
+.portfolio-section h2 {
+	font-size: 5rem;
+}
+	
+.project-containers {
+	box-shadow: 3px 3px 2.5px #000000;
+	border-radius: 5px;
+	border-style: ridge;
+	width: 65%;
+	padding: 20px;
+	font-size: 1.5rem;
+	display: flex;
+	gap: 20px;
+
+}
+
+.project-images img {
+	object-fit: contain;
+}
+
+.contact-section {
+	background-color: #000000;
+	min-height: 89vh;
+	font-family: "Andale Mono";
+	font-size: 2rem;
+	padding-left: 200px;
+	color: #fc7b03;
+	margin: 0;
+}	
+
+.contact-section h2 {
+	margin: 0;
+	font-size: 5rem;
+}
+.contact-section a img {
+	background: #fc7b03;
+	padding: 4px;
+	border-radius: 6px;
+}
+
+footer {
+	font-family: "Andale Mono";
+	font-weight: bold;
+	font-size: 1rem;
+	background-color: #fc7b03;
+	padding-left: 20px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;	
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.scroll-to-top-button {
+  	position: fixed; 
+  	bottom: 20px; 
+  	right: 30px; 
+  	z-index: 99; 
+  	border: none; 
+  	outline: none; 
+  	background-color: #000000; 
+  	color: #fc7b03; 
+  	cursor: pointer; 
+  	padding: 15px; 
+  	border-radius: 10px; 
+  	font-size: 18px; 
+	font-family: "Andale Mono";
+	text-decoration: none;
+}
+
+.scroll-to-top-button:hover {
+ 	background-color: #db6a00; 
+}
+
+@media screen and (max-width: 800px) {
+	.contact-section, .intro-section, .portfolio-section, .about-section {
+		padding: 20px;
+		height: auto;
+		flex-direction: column;
+		gap: 20px;		
+	}
+	nav {
+		justify-content: start;
+	}
+
+	nav a {
+		width: 25%;
+	}
+	
+	.about-text {
+		width: 100%;
+	}
+	.about-image {
+		position: relative;
+		bottom: 100px;
+	}
+	.project-containers {
+		flex-direction: column;
+		width: 100%;
+	}
+	.portfolio-section h2 {
+		margin-right: 20px;
+	}
+
+}
+
